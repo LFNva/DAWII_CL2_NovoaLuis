@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link th:href="@{/styles/bootstrap/bootstrap.min.css}"
+          rel="stylesheet"/>
+    <link th:href="@{/styles/fontawesome/all.css}"
+          rel="stylesheet"/>
+    <script th:src="@{/scripts/bootstrap/bootstrap.bundle.js}"
+            type="text/javascript"></script>
+</head>
+<body>
+<nav th:replave="~{layout::head}"></nav>
+<h1>Hola de nuevo</h1>
+<h1 th:text="${session.usuario}"></h1>
+
+</body>
+</html>
